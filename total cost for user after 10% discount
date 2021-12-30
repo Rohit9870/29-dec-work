@@ -1,0 +1,32 @@
+
+package total_cost_after_discount;
+import java.util.Scanner;
+
+public class Total_cost_after_discount {
+    
+    static void discount(int price){
+        int dis = (price/100)*10;
+        int cost = price-dis;
+        System.out.println("your total price is "+price);
+        System.out.println("But you have to pay "+cost+"rs because you have got 10% discount");
+    }
+
+    
+    public static void main(String[] args) {
+        
+        Scanner scn = new Scanner(System.in);
+        System.out.println("please keep in your mind ");
+        System.out.println("1 unit = 100 rs");
+        System.out.println("enter your units that you want to purchase");
+        int n = scn.nextInt();
+        int price = n*100;
+        if(price<1000){
+            System.out.println("sorry! we are not able to provide you discount because your purchasing price is less than 1000");
+        }
+        else{
+            discount(price);
+        }
+    
+    }
+    
+}
