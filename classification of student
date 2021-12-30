@@ -1,0 +1,42 @@
+package classification_of_student;
+import java.util.*;
+
+public class Classification_of_student {
+
+   
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter your gender");
+        char gender = scn.next().charAt(0);
+        System.out.println("Enter the marks");
+        int marks = scn.nextInt();
+        
+        if(marks>=75){
+            if(gender=='M'){
+                System.out.println("student is a Boy and he is Intelligent");
+            }
+            else{
+                System.out.println("student is a Girl and she is Intelligent");
+            }
+            
+        }
+        else if(marks>=35){
+            if(gender=='M'){
+                System.out.println("student is a Boy and he is Average");
+            }
+            else{
+                System.out.println("student is a Girl and she is Average");
+            }
+        }
+        else{
+            if(gender=='M'){
+                System.out.println("student is a Boy and he is Dull");
+            }
+            else{
+                System.out.println("student is a Girl and she is Dull");
+            }
+            
+        }
+    }
+    
+}
